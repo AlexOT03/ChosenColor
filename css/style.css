@@ -1,0 +1,96 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#score {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#round {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: none;
+    justify-content: center;
+}
+
+.color-btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+    font-size: 0; /* Ocultar texto del botón */
+    border-radius: 10%;
+}
+
+.color-btn[data-color="rojo"] { background-color: red; }
+.color-btn[data-color="azul"] { background-color: blue; }
+.color-btn[data-color="verde"] { background-color: green; }
+.color-btn[data-color="amarillo"] { background-color: yellow; }
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+#start-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+}
+
+#pause-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+}
+
+#start-btn:hover {
+    background-color: rgb(68, 113, 1);
+}
+
+#pause-btn:hover {
+    background-color: rgb(113, 1, 1);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
