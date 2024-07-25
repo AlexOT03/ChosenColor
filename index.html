@@ -8,32 +8,28 @@
     <title>Tizen Wearable Web IDE - Tizen Wearable - Tizen Wearable basic Application</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
     <script src="js/main.js"></script>
 </head>
 
 <body>
-  <!--<div class=contents>
-  	<div style='margin:auto;'>
-  		<span class=content_text id=textbox>Basic</span>
-  	</div>
-  </div>-->
-  <div class="container">
-          <header class="row">
-            <div id="score">Puntos: 0</div>
-            <div id="round">Ronda 1</div>
-        </header>
-        <div class="grid">
-            <!-- 4 botones en una cuadrícula de 2x2 -->
-            <button class="color-btn" data-color="rojo"></button>
-            <button class="color-btn" data-color="azul"></button>
-            <button class="color-btn" data-color="verde"></button>
-            <button class="color-btn" data-color="amarillo"></button>
+    <div class="container">
+        <div class="row">
+            <h1>Choosing Color</h1>
         </div>
-        <div id="message"></div>
-        <footer class="row">
-            <button id="start-btn">Iniciar</button>
-            <button id="pause-btn">Pausar</button>
-        </footer>
+        <div class="row p">
+            <div class="col">
+                <button class="play-btn btn-primary" data-level="0">Jugar</button>
+            </div>
+            <div class="col">
+                <a href="levels.html" class="btn-secondary">Niveles</a>
+            </div>
+        </div>
+        <div class="row p center">
+            <a href="about.html" class="btn-tertiary">
+                ℹ
+            </a>
+        </div>
     </div>
 </body>
 </html>
